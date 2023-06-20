@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Leaflet css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <!-- Leaflet routing machine -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"
+    />
+    <!-- Autocomplete Input -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.3/dist/css/autocomplete.min.css"
+    />
+    <title>MapsJs</title>
+  </head>
+  <body>
+    <main>
+      <div id="map" class="map"></div>
+      <b><h3>Podaj adres początkowy oraz końcowy</h3></b>
+      <form>
+        <div class="auto-search-wrapper">
+          <input
+            type="text"
+            autocomplete="off"
+            id="search1"
+            class="full-width"
+            placeholder="Podaj adres początkowy"
+          />
+        </div>
+
+        <div class="auto-search-wrapper">
+          <input
+            type="text"
+            autocomplete="off"
+            id="search2"
+            class="full-width"
+            placeholder="Podaj adres końcowy"
+          />
+        </div>
+        <form class="searchButton" action="/direction.html">
+          <input
+            class="button"
+            type="button"
+            onclick="location.href='./direction.html';"
+            value="Szukaj"
+          />
+        </form>
+      </form>
+
+      <b><h3>Ostatnia trasa</h3></b>
+      <ul class="routes-container"></ul>
+    </main>
+
+    <!-- Leaflet js cdn -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <!-- Leaflet routing machine js -->
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <!-- Autocomplete Input -->
+    <script src="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.3/dist/js/autocomplete.min.js"></script>
+
+    <!-- My script -->
+    <script src="/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Leaflet css cdn -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <!-- Leaflet routing machine -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"
+    />
+
+    <title>leaflet Directions</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="/index.html">
+        <div class="back-button">
+          <img src="/src/images/back-button.svg" alt="" />
+        </div>
+      </a>
+      <h3 class="title">
+        MapsJs Project created by using Leaflet with Leaflet Routing Machine
+      </h3>
+    </div>
+    <div id="map"></div>
+    <div class="auto-search-wrapper">
+      <input
+        type="text"
+        autocomplete="off"
+        id="search1"
+        class="full-width"
+        placeholder="Podaj adres początkowy"
+      />
+    </div>
+    <div class="auto-search-wrapper">
+      <input
+        type="text"
+        autocomplete="off"
+        id="search2"
+        class="full-width"
+        placeholder="Podaj adres początkowy"
+      />
+    </div>
+    <div class="info-container">
+      <h3>Trasa z</h3>
+      <span class="start"> start </span>
+      <h3>do</h3>
+      <span class="direction"> direction </span>
+      <h3>Odległość to <span class="distance"> 1440 </span> km</h3>
+      <h3>Twoja podróż zajmie <span class="time"> 2 </span> minut</h3>
+    </div>
+
+    <!-- Leaflet js cdn -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+
+    <!-- Leaflet routing machine js -->
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+    <!-- Autocomplete Input -->
+    <script src="https://cdn.jsdelivr.net/gh/tomickigrzegorz/autocomplete@1.8.3/dist/js/autocomplete.min.js"></script>
+
+    <!-- My script -->
+    <script src="/index.js"></script>
+  </body>
+</html>

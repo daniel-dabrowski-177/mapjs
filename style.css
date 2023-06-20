@@ -1,0 +1,151 @@
+html {
+  background-image: url("/src/images/background.jpg");
+  background-repeat: repeat;
+  background-size: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+input {
+  border-radius: 10px;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: white;
+  padding: 10px 0;
+  color: darksalmon;
+  font-weight: bold;
+  border: 2px solid darksalmon;
+}
+
+.button:hover {
+  background-color: darksalmon;
+  color: white;
+}
+
+.back-button img {
+  width: 54px;
+  height: 54px;
+  background: darksalmon;
+  border-radius: 10px;
+}
+
+.back-button {
+  flex: 1;
+}
+
+.back-button img:hover {
+  color: white;
+  background: rgb(232, 125, 89);
+}
+
+.title {
+  flex: 100%;
+  margin: 20px 10px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+#map {
+  position: relative;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 15px solid white;
+  max-width: 1024px;
+  display: flex;
+}
+
+.leaflet-control-zoom,
+.leaflet-routing-container {
+  display: none;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+input,
+button {
+  margin: auto;
+  width: 150px;
+  margin-top: 30px;
+}
+
+a,
+button {
+  width: min-content;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.route {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.auto-search-wrapper {
+  display: none;
+}
+
+.map {
+  display: none;
+}
+
+span {
+  margin: 0 1ch;
+  color: darksalmon;
+  font-weight: bold;
+}
+
+.info-container {
+  margin: 40px 0 0 0;
+}
+
+.start,
+.direction {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.from,
+.to {
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .route {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .route p {
+    margin: auto;
+  }
+}
