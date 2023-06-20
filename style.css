@@ -114,7 +114,7 @@ h3 {
 }
 
 .map {
-  display: none;
+  width: 50vw;
 }
 
 span {
@@ -137,6 +137,8 @@ span {
 .from,
 .to {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {
